@@ -1,0 +1,30 @@
+@use '../../utilities/responsive';
+
+.about {
+
+    &__inner {
+        display: grid;
+        padding: 48px;
+        background-color: var(--color-light);
+
+        @include responsive.max (40rem) {
+            padding: 40px;
+        }
+    }
+
+
+    &__content {
+        position: relative;
+        background-color: var(--color-accent);
+        padding: 4rem;
+        color: var(--color-dark);
+        
+        @include responsive.max(40rem) {
+        padding: 16px;
+        }
+    }
+
+    &__title {
+        font-size: clamp(2rem, 3vw, 3rem);
+    }
+}

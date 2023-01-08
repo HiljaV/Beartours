@@ -1,0 +1,62 @@
+@use '../components/buttons' as button;
+
+body {
+    font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    font-weight: 400;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+    font-size: clamp(1.3rem, 3vw, 1.6rem);
+}
+
+h4 {
+    font-size: clamp(1.1rem, 3vw, 1.4rem);
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+p {
+    line-height: var(--line-height);
+    font-size: clamp(1rem, 2vw, 1.3rem);
+}
+
+a {
+
+    color: var(-color-dark);
+    text-decoration: none;
+    line-height: var(--line-height);
+    &:hover {
+        color: var(--color-accent);
+    }
+}
+
+span {
+    line-height: var(--line-height);
+}
+
+li {
+    line-height: var(--line-height);
+    font-size: clamp(1rem, 2vw, 1.3rem);
+}
+
+.button {
+    @include button.default;
+}
